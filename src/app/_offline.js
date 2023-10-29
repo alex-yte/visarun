@@ -1,13 +1,13 @@
-import RootLayout from './layout';
-import Home from './page';
+import Head from 'next/head'
 
-function render() {
-  return (
-    <div>
-      <RootLayout />
-      <Home />
-    </div>
-  );
-}
+const Fallback = () => (
+  <>
+    <Head>
+      <title>Калькулятор визарана</title>
+    </Head>
+    <h1>This is offline fallback page</h1>
+    <h2>When offline, any page route will fallback to this page</h2>
+  </>
+)
 
-export default render; 
+export default Fallback
