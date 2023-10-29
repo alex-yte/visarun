@@ -3,9 +3,30 @@
 @tailwind utilities;
 
 :root {
+  font-size: 62.5%;
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+}
+
+h1{
+  font-size: 3rem;
+  line-height: 100%;
+}
+h2{
+  font-size: 3rem;
+}
+h3{
+  font-size: 1.5rem;  
+}
+p,
+label{
+  font-size: 2rem;
+}
+#date{
+  -webkit-appearance: none;
+  font-size: 2rem;
+  height: 4rem;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -24,4 +45,11 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+@media (max-width: 500px){
+  #date{
+    -webkit-appearance: none;
+    width: 100%;
+  }
 }
