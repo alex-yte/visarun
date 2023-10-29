@@ -1,10 +1,13 @@
-import RootLayout from "./layout";
-import Home from "./page";
+import RootLayout from './layout';
+import Home from './page';
 
-return
-(
+function render() {
+  return (
     <div>
-        <RootLayout/>
-        <Home/>
+      <RootLayout />
+      <Home />
     </div>
-)
+  );
+}
+
+export default render; 
