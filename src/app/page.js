@@ -7,7 +7,7 @@ export default function Home() {
     
     let dateObject = new Date(initialDate);
     
-    dateObject.setDate(dateObject.getDate() + 29);
+    dateObject.setDate(dateObject.getDate() + 30);
     
     const monthNames = [
       'Января', 'Февраля', 'Марта', 'Апреля', 'Мая', 'Июня', 'Июля',
