@@ -1,0 +1,19 @@
+.nav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    
+}
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-size: 2rem;
+}
+.link{
+}
+.link.active{
+    color: red;
+}

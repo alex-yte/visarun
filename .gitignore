@@ -1,20 +1,26 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-/node_modules
-/.pnp
+/front/node_modules
+/visarun-back-end/node_modules
+/front/.pnp
+/visarun-back-end/.pnp
 .pnp.js
 .yarn/install-state.gz
 
 # testing
-/coverage
+/front/coverage
+/visarun-back-end/coverage
 
 # next.js
-/.next/
-/out/
+/front/.next/
+/visarun-back-end/.next/
+/front/out/
+/visarun-back-end/out/
 
 # production
-/build
+/front/build
+/visarun-back-end/build
 
 # misc
 .DS_Store
@@ -34,3 +40,5 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+.env
+node_modules
