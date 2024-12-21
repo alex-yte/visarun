@@ -1,7 +1,7 @@
 // 'use client';
 // import Link from "next/link";
 
-import { DatePicker } from "./components/datepicker";
+import DatePicker from "./components/datepicker";
 
 export default function Home({ data }) {
 
