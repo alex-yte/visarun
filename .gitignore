@@ -13,6 +13,7 @@
 /visarun-back-end/coverage
 
 # next.js
+.next
 /front/.next/
 /visarun-back-end/.next/
 /front/out/
