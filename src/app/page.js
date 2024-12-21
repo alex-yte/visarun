@@ -5,7 +5,7 @@ import Menu from './components/menu';
 export default async function Page() {
   
   return (
-    <section>
+    <section className='bg-slate-400'>
       <Menu/>
       <Home/>
     </section>
