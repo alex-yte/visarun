@@ -20,7 +20,7 @@ import { ru } from "date-fns/locale"
 export function DatePicker() {
 
     function getLastDay(selectedDate) {
-        // Validate the input date
+        
         let dateObject = new Date(selectedDate);
         if (isNaN(dateObject.getTime())) {
             document.getElementById('dateOutput').textContent = '';
