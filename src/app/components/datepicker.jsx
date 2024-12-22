@@ -6,15 +6,15 @@ import { format } from "date-fns"
 import { Calendar as CalendarIcon } from "lucide-react"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 
-import { cn } from "@/lib/utils"
+import { cn } from "../../lib/utils"
 // import { Button } from "@/components/ui/button"
-import { Button } from "@/src/components/ui/button"
-import { Calendar } from "@/src/components/ui/calendar"
+import { Button } from "../../components/ui/button"
+import { Calendar } from "../../components/ui/calendar"
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from "@/src/components/ui/popover"
+} from "../../components/ui/popover"
 import { ru } from "date-fns/locale"
 
 
