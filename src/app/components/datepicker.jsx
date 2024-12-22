@@ -17,7 +17,7 @@ import {
 import { ru } from "date-fns/locale"
 
 
-export default function DatePicker() {
+export function DatePicker() {
 
     function getLastDay(selectedDate) {
         
