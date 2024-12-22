@@ -1,9 +1,9 @@
 // 'use client';
 // import Link from "next/link";
 
-import DatePicker from "./components/datepicker";
+import DatePicker from "@/components/datepicker";
 
-export default function Home({ data }) {
+export default function Home() {
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-center gap-8 p-10">
