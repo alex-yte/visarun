@@ -1,12 +1,10 @@
-// 'use client';
-// import Link from "next/link";
 
 import DatePicker from "./components/datepicker";
 
 export default function Home({ data }) {
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center gap-8 p-10">
+    <main className="flex flex-grow flex-col items-center justify-center gap-8 p-10">
       <section className='container text-center'>
         <h1>Калькулятор безвиза с Сербией</h1>
       </section>

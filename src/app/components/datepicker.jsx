@@ -67,36 +67,34 @@ export default function DatePicker() {
         >
           <CalendarIcon className="mr-2 h-[1.8rem] w-[1.8rem]" />
           
-          {date ? format(date, "d MMMM yyyy", { locale: ru }) : <span>Дата въезда</span>}
+          {date ? format(date, "ccc d MMM yy", { locale: ru }) : <span>Дата въезда</span>}
         </Button>
       </PopoverTrigger>
       <PopoverContent className="w-auto text-[3rem] p-[0.5rem]">
         <Calendar
-          mode="single"
-          selected={date}
-          onSelect={(selectedDate) => { setDate(selectedDate); getLastDay(selectedDate); }}
-          initialFocus
-          className="flex w-full h-full border rounded-md"
-          classNames={{
-            // months: "flex w-full flex-col sm:flex-row space-y-4 sm:space-x-4 sm:space-y-0 flex-1",
-            // month: "space-y-4 w-full flex flex-col",
-            // caption_label: "text-lg",
-            // table: "w-full h-full border-collapse space-y-1",
-            // row: "w-full mt-2",
-            head_cell: "text-[1.5rem] w-16 rounded-sm",
-            caption_label: "text-[1.5rem]",
-            day: "text-lg w-16 h-16 rounded-sm",
-            weekdays: "text-lg w-16 h-16 rounded-sm",
-            nav_button: "text-lg w-[2.5rem] h-[2.5rem]",
-          }}
-          components={{
+            showOutsideDays={true}
+            weekStartsOn= {1}
+            locale={ru}
+            mode="single"
+            selected={date}
+            onSelect={(selectedDate) => { setDate(selectedDate); getLastDay(selectedDate); }}
+            initialFocus
+            className="flex w-full h-full border rounded-md"
+            classNames={{
+                head_cell: "text-[1.5rem] w-16 rounded-sm",
+                caption_label: "text-[1.5rem]",
+                day: "text-lg w-16 h-16 rounded-sm",
+                weekdays: "text-lg w-16 h-16 rounded-sm",
+                nav_button: "text-lg w-[2.5rem] h-[2.5rem]",
+            }}
+            components={{
             IconLeft: ({ className, ...props }) => (
-              <ChevronLeft className={cn("h-[2rem] w-[2rem]", className)} {...props} />
+                <ChevronLeft className={cn("h-[2rem] w-[2rem]", className)} {...props} />
             ),
             IconRight: ({ className, ...props }) => (
-              <ChevronRight className={cn("h-[2rem] w-[2rem]", className)} {...props} />
+                <ChevronRight className={cn("h-[2rem] w-[2rem]", className)} {...props} />
             ),
-          }}
+            }}
         />
       </PopoverContent>
     </Popover>

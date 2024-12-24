@@ -10,10 +10,12 @@
     align-items: center;
     justify-content: center;
     gap: 20px;
-    font-size: 2rem;
+    /* font-size: 2rem; */
 }
 .link{
 }
 .link.active{
-    color: red;
+    /* color: red; */
+    font-weight: bold;
+    text-decoration: underline;
 }

@@ -10,10 +10,10 @@ export default function Menu() {
 
     return (
         <nav className={styles.nav} role="navigation">
-            <ul className={styles.navigation} role="navigation">
+            <ul className={styles.navigation + ' ' + 'py-3 text-[1.5rem]'} role="navigation">
                 <li>
                     <Link href="/" className={` ${styles.link} ${pathname === '/' ? `${styles.active}` : ''}`}>
-                        Home
+                        Главная
                     </Link>
                 </li>
                 {/* <li>
@@ -28,7 +28,7 @@ export default function Menu() {
                 </li> */}
                 <li>
                     <Link href="/pages/login" className={` ${styles.link} ${pathname === '/pages/login' ? `${styles.active}` : ''}`}>
-                        Profile
+                        История
                     </Link>
                 </li>
             </ul>
