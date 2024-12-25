@@ -3,25 +3,25 @@
 @tailwind utilities;
 
 :root {
-  font-size: 62.5%;
+  /* font-size: 62.5%; */
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
 
 h1{
-  font-size: 3rem;
+  font-size: 2rem;
   line-height: 100%;
 }
 h2{
-  font-size: 3rem;
+  font-size: 1.75rem;
 }
 h3{
   font-size: 1.5rem;  
 }
 p,
 label{
-  font-size: 2rem;
+  font-size: 1rem;
 }
 #date{
   -webkit-appearance: none;

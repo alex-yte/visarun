@@ -13,9 +13,9 @@
     /* font-size: 2rem; */
 }
 .link{
+    font-weight: 300;
 }
 .link.active{
-    /* color: red; */
+    color: rgb(14 165 233);
     font-weight: bold;
-    text-decoration: underline;
 }

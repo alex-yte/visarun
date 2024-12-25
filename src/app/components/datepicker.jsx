@@ -6,7 +6,7 @@ import { format } from "date-fns"
 import { Calendar as CalendarIcon } from "lucide-react"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 
-import { cn } from "@/lib/utils"
+import { cn } from "../../lib/utils"
 import { Button } from "../ui/button"
 import { Calendar } from "../ui/calendar"
 import {
@@ -61,16 +61,16 @@ export default function DatePicker() {
         <Button
           variant={"outline"}
           className={cn(
-            "w-auto h-[3rem] text-[2rem] p-[0.7rem] justify-start text-left font-normal",
+            "w-auto h-[2rem] text-[1rem] p-[0.5rem] justify-start text-left font-normal",
             !date && "text-muted-foreground"
           )}
         >
-          <CalendarIcon className="mr-2 h-[1.8rem] w-[1.8rem]" />
+          <CalendarIcon className="mr-2 h-[1rem] w-[1rem]" />
           
           {date ? format(date, "ccc d MMM yy", { locale: ru }) : <span>Дата въезда</span>}
         </Button>
       </PopoverTrigger>
-      <PopoverContent className="w-auto text-[3rem] p-[0.5rem]">
+      <PopoverContent className="w-auto text-[2rem] p-[0.5rem]">
         <Calendar
             showOutsideDays={true}
             weekStartsOn= {1}
@@ -81,18 +81,18 @@ export default function DatePicker() {
             initialFocus
             className="flex w-full h-full border rounded-md"
             classNames={{
-                head_cell: "text-[1.5rem] w-16 rounded-sm",
-                caption_label: "text-[1.5rem]",
-                day: "text-lg w-16 h-16 rounded-sm",
-                weekdays: "text-lg w-16 h-16 rounded-sm",
-                nav_button: "text-lg w-[2.5rem] h-[2.5rem]",
+                head_cell: "text-[1rem] w-8 rounded-sm",
+                caption_label: "text-[1rem]",
+                day: "text-[1rem] w-8 h-8 rounded-sm",
+                weekdays: "text-[1rem] w-8 h-8 rounded-sm",
+                nav_button: "text-[1rem] w-[2rem] h-[2rem]",
             }}
             components={{
             IconLeft: ({ className, ...props }) => (
-                <ChevronLeft className={cn("h-[2rem] w-[2rem]", className)} {...props} />
+                <ChevronLeft className={cn("h-[1.5rem] w-[1.5rem]", className)} {...props} />
             ),
             IconRight: ({ className, ...props }) => (
-                <ChevronRight className={cn("h-[2rem] w-[2rem]", className)} {...props} />
+                <ChevronRight className={cn("h-[1.5rem] w-[1.5rem]", className)} {...props} />
             ),
             }}
         />
