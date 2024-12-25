@@ -2,7 +2,7 @@ import Menu from "../../components/menu"
 import { ClerkProvider, SignIn, SignUp } from "@clerk/nextjs"
 import { ruRU } from "@clerk/localizations"
 
-const page = ({Component, pageProps}) => {
+export default function Page(){
   return (
 	<ClerkProvider localization={ruRU}>
 		<main className='bg-slate-200 dark:bg-slate-950 text-slate-900 dark:text-slate-300 h-screen flex flex-col'>
@@ -63,5 +63,3 @@ const page = ({Component, pageProps}) => {
 	</ClerkProvider>
   )
 }
-
-export default page
